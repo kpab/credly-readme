@@ -2,6 +2,8 @@
 
 GitHub Action to sync your earned Credly badges into a GitHub profile README using Credly's public JSON endpoint.
 
+Marketplace: [credly-readme](https://github.com/marketplace/actions/credly-readme)
+
 Japanese documentation is available in [README.ja.md](./README.ja.md).
 
 ## Features

@@ -2,6 +2,8 @@
 
 Credly の公開 JSON を使って、取得済みバッジを GitHub プロフィール README に自動反映する GitHub Action です。
 
+Marketplace: [credly-readme](https://github.com/marketplace/actions/credly-readme)
+
 English documentation is available in [README.md](./README.md).
 
 ## Features
