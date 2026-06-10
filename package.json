@@ -1,0 +1,32 @@
+{
+  "name": "credly-readme",
+  "version": "0.1.0",
+  "description": "Import your Credly badges into your GitHub profile README.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "test": "tsx --test tests/**/*.test.ts",
+    "build": "ncc build src/index.ts -o dist",
+    "ci": "npm run lint && npm run test && npm run build"
+  },
+  "keywords": [
+    "github-action",
+    "credly",
+    "readme",
+    "badges"
+  ],
+  "author": "kpab",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@vercel/ncc": "^0.38.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,45 @@
+name: "Credly README"
+description: "Import your Credly badges into your GitHub profile README."
+author: "kpab"
+branding:
+  icon: "award"
+  color: "orange"
+runs:
+  using: "node20"
+  main: "dist/index.js"
+inputs:
+  credly_user:
+    description: "Credly username"
+    required: true
+  readme_path:
+    description: "Path to the README file to update"
+    required: false
+    default: "README.md"
+  section_name:
+    description: "Marker section name"
+    required: false
+    default: "badges"
+  sort:
+    description: "Badge sort order: LATEST, OLDEST, or NAME"
+    required: false
+    default: "LATEST"
+  max_badges:
+    description: "Maximum number of badges to render; 0 means all"
+    required: false
+    default: "0"
+  badge_width:
+    description: "Rendered badge width in pixels"
+    required: false
+    default: "100"
+  commit_message:
+    description: "Commit message used when README changes"
+    required: false
+    default: "chore: update credly badges"
+  dry_run:
+    description: "If true, only log the generated section without writing files"
+    required: false
+    default: "false"
+  empty_message:
+    description: "Fallback message when no badges are found"
+    required: false
+    default: "No badges found."
